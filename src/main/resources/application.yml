@@ -1,0 +1,46 @@
+server:
+  port: 8080
+
+spring:
+  mvc:
+    view:
+      prefix: /
+      suffix: .html
+
+
+  # 使用ali druid 数据源
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+
+  # 使用默认的jackson序列化
+  jackson:
+    # 允许某个属性为空
+    default-property-inclusion: non_null
+    serialization:
+      # 格式化输出
+      indent-output: true
+      # 格式化日期
+    date-format: yyyy-MM-dd HH:mm
+    time-zone: GMT+8
+    parser:
+      # 允许不存在的属性
+      allow-missing-values: true
+
+  # 使用个人网易邮箱
+  mail:
+    host: smtp.163.com
+    username: im_treeliked@163.com
+    password: <pwd>
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+    port:
+
+
+
+
+

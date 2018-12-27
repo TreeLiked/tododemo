@@ -1,0 +1,30 @@
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    width: 100%;
+    height: 100vm
+}
+
+.binding-bg {
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -10
+}
+
+.curr-view {
+    padding-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center
+}
+
+.login-div[data-v-2dc85e70], .reg-div[data-v-f2ea2ef4] {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 49px
+}
